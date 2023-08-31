@@ -15,7 +15,8 @@ const UserForm = (props) => {
         const newUser = { 
             username, 
             email, 
-            password 
+            password,
+            confirmPassword
         };
         console.log("Welcome", newUser);
     };
@@ -54,8 +55,8 @@ const UserForm = (props) => {
                 <input
                     name="confirmPassword"
                     type="text"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)} />
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)} />
             </div>
 
         </form>
